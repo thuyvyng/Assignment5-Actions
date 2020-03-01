@@ -19,8 +19,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected, task.area(2))
 
     def testGetElements(self):
-        list = [1,2,3,4]
-        expected = [1,4]
+        list = [1, 2, 3, 4]
+        expected = [1, 4]
 
         self.assertEqual(expected, task.get_elements(list))
 
