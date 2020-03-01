@@ -18,6 +18,12 @@ class TestCase(unittest.TestCase):
         expected = 12.56
         self.assertEqual(expected, task.area(2))
 
+    def testGetElements(self):
+        list = [1,2,3,4]
+        expected = [1,4]
+
+        self.assertEqual(expected, task.get_elements(list))
+
 
 if __name__ == '__main__':
     unittest.main()
