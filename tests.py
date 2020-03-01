@@ -1,4 +1,5 @@
 import unittest
+from datetime import date
 import task
 
 
@@ -23,6 +24,14 @@ class TestCase(unittest.TestCase):
         expected = [1, 4]
 
         self.assertEqual(expected, task.get_elements(list))
+
+    def testDate(self):
+        date1 = date(2018, 12, 13)
+        date2 = date(2019, 2, 25)
+
+        expected = 74
+
+        self.assertEqual(expected, task.get_date(date1, date2))
 
 
 if __name__ == '__main__':
